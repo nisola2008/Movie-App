@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+body {
+    background: #474646;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.card {
+    width: clamp(150px, 95vw, 250px);
+    box-shadow: 0 0 .5rem rgba(255, 0, 0, 1);
+    outline: 2px solid rgba(255, 0, 0, 6);
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: 200ms ease-in-out transform;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to top, #151515, transparent);
+}
+.info {
+    padding: 2rem 1rem 1rem;
+}
+.info h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+.single-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: .8rem;
+    margin: .2rem 0;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.movies-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+.movies-container {
+    padding: 1rem;
+    text-align: center;
+    color: whitesmoke;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 2rem;
+    padding: 2rem  0 1rem;
+}
+.search input, .search button {
+    padding: .5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid green;
+    color: white;
+    border-radius: 6px;
+}
+.search button {
+    cursor: pointer;
+}
+.search button:hover {
+    background-color: green;
+}
+.search button:active {
+    transform: scale(.9);
+}
