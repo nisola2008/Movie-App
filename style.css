@@ -103,7 +103,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.1)), url(premium_photo-1669759293033-7613de77416c.jpg);
+   /* background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.1)), url(premium_photo-1669759293033-7613de77416c.jpg);*/
     top: 0;
     display: flex;
     background-size: cover;
@@ -185,4 +185,11 @@ body {
 .show-popup {
     transform: scale(1);
 }
-/*
+.heart-icon {
+    color: white;   
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.heart-icon.change-color {
+    color: red;
+}
