@@ -7,11 +7,15 @@ const btn = document.querySelector('.search button');
 const main_grid = document.querySelector('.favorite .movies-grid');
 const main_grid_title = document.querySelector('.favorite h1')
 
+const popup_container = document.querySelector('.popup-container')
+
 function add_click_effect_to_card (cards) {
     cards.forEach(card => {
         card.addEventListener('click', () => show_popup(card))
     })
 };
+
+//search movies
 async function get_movies_by_search (search_term) {
     const resp = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${search_term}`)
     const respData = await resp.json()
@@ -50,7 +54,17 @@ async function add_searched_movies_to_dom() {
     const cards = document.querySelectorAll('.card')
     add_click_effect_to_card(cards)
 }
+//popup
+async function get_movies_by_id (id) {
+    const resp = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
+    const respData = await resp.json()
+    return respData
+    }
+    async function get_movie_trailer (id) {
+    const resp = await fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`)
+    const respData = await resp.json()
+    return respData.results[0].key
+    }
 function show_popup (card) {
-    console.log('Popup is shown' + card);
+    popup_container.classList.add('show-popup')
 }
-
