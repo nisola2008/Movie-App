@@ -228,7 +228,7 @@ add_to_dom_trending()
         const data = await get_trending_movies()
         console.log(data)
        
-        //this will give us only 10 results
+        //this will give us only 20 results of trending movies
         trending_el.innerHTML = data.slice(0, 20).map(e => {
             return `
              <div class="card" data-id="${e.id}">
