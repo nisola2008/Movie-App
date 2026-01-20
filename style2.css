@@ -1,21 +1,44 @@
-@media(max-width: 600px) {
-    .search {
-        width: 100%;
-    }
-    .search input {
-        font-size: 15px;
-    }
-    .movies-grid {
+@media (max-width: 600px) {
+  .search {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .search input {
+    flex: 1;
+    min-width: 0;
+    font-size: 15px;
+  }
+
+  .search button {
+    flex-shrink: 0;
+  }    .movies-grid {
         justify-content: space-between;
         padding: 0.5rem;
     }
-    .card {
-        width: calc(50% - 1rem);
-    }
+     .movies-container {
+    padding: 0;
+  }
+
+  .movies-grid {
+    gap: 1.3rem 0; /* vertical gap only */
+    padding: 3;
+  }
+
+  .card {
+    width: 48%;
+    max-width: none;
+    gap: 1rem;
+  }
   .single-info {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  font-size: 0.8rem;
+  flex-wrap: nowrap;
+}
+
+.single-info span {
+  white-space: nowrap;
+}
+.single-info span:nth-child(1) {
+    position: relative;
+    left: -10px;
 }
 }
