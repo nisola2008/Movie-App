@@ -52,7 +52,8 @@
 .popup-container {padding: 2rem;}
 .content {
     flex-direction: column;
-    margin-top: 55rem;
+    top: 450px;
+    position: relative;
 }
 .x-icon {
     top: 10px;
