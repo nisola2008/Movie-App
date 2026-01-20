@@ -38,10 +38,28 @@
   white-space: nowrap;
 }
 .single-info:nth-child(3) {
-    position: relative;
     text-align: center;
     display: block;
     justify-content: center;
     align-items: center;
+}
+.info h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.popup-container * {padding: 0;}
+.popup-container {padding: 2rem;}
+.content {
+    flex-direction: column;
+    margin-top: 55rem;
+}
+.x-icon {
+    top: 10px;
+    right: 20px;
+}
+.right .single-info {
+    display: flex;
+    justify-content: space-between;
 }
 }
