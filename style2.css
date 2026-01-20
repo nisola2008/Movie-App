@@ -39,6 +39,10 @@
 }
 .single-info span:nth-child(1) {
     position: relative;
+    left: -12px;
+}
+.single-info span:nth-child(2) {
+    position: relative;
     left: -10px;
 }
 }
