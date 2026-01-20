@@ -1,0 +1,21 @@
+@media(max-width: 600px) {
+    .search {
+        width: 100%;
+    }
+    .search input {
+        font-size: 15px;
+    }
+    .movies-grid {
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+    .card {
+        width: calc(50% - 1rem);
+    }
+  .single-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+}
