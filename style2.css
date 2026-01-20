@@ -37,12 +37,11 @@
 .single-info span {
   white-space: nowrap;
 }
-.single-info span:nth-child(1) {
+.single-info:nth-child(3) {
     position: relative;
-    left: -12px;
-}
-.single-info span:nth-child(2) {
-    position: relative;
-    left: -10px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 }
